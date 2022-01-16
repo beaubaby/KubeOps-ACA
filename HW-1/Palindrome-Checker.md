@@ -23,5 +23,5 @@ Note : This step can also ignore punctuation
 5. Define function to reverse character for flip the word together and compare the word length should be the same and all character matching after reverse
 
 Set `if/else` method to check;
-- if it’s Palindrome, all character will be matching and return value = `true`
+- if it’s Palindrom, all character will be matching and return value = `true`
 - If not like that, it will be return value = `false`
