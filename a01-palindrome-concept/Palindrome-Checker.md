@@ -13,7 +13,7 @@ Compare String to Its Reverse
 2. Define function to set all  Alphanumeric to Lowercase
 3. Keep all Lowercase version to another one argument
 4. Define function to match Alphanumeric character and finding as below by using regex pattern 
-`[a-z0-9ก-๛]` 
+`[a-z0-9ก-ฮ]` 
 to define matching character
 	
 ```
