@@ -2,10 +2,14 @@ use std::io;
 use regex::Regex;
 
 fn main() {
+    loop {
     let mut word = String::new();
     println!("Please enter the word to check is it Palindrome or not : ");
     io::stdin().read_line(&mut word).expect("The word is incorrect, Please input again");
+    if word.trim().to_uppercase() == "END" { break; }
     check_palindrome(word);
+    }
+    println!("End Program");
 }
 
 fn check_palindrome(word: String) {
