@@ -32,3 +32,38 @@ Major.Minor.Patch(Fix bug) - beta/alpha
 
 Using [Commit Conventional](https://www.conventionalcommits.org/en/v1.0.0/)
 
+### Asymatic key
+Public key = Mother key -> Keep on the server
+Private key = Brother key -> Keep on local host
+
+`ssh-keygen -t <algorithm> -C "<message>"`
+
+kubeOps uses `ed_25519` for key algorithm.
+
+### Using git ssh
+
+```
+git clone git@kakkai:kakkai-academy/security-pipeline.git
+```
+
+#### Appendix
+
+`git@host:organization/repository-in-org`
+
+host refers from `~/.ssh/config`
+
+```
+Host host
+  HostName github.com
+  User <username>
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/<key>
+```
+
+###  Git switch between organization
+
+![git_switch_org](/pic/git_switch_org.png)
+
+Reference from JoJo:
+https://docs.google.com/document/d/16fM2zhFwS4dHUYQtNqy3LGKc5MYxtQ_d6HqDiSvxhfw/edit
